@@ -1,2 +1,2 @@
 # quality-control-system
- solução para controle de qualidade para revisão de cabedais. Examine, registre modelos e defeitos com eficiência, obtenha relatórios detalhados, e mantenha controle em tempo real. Elevando a qualidade da produção de calçados em cada inspeção.
+O quality-control-system é uma solução para aprimorar o controle de qualidade na revisão de cabedais. Desenvolvido para a indústria de calçados, o sistema oferece uma abordagem eficiente e precisa na identificação de defeitos em cabedais. Com uma interface intuitiva, os revisores podem facilmente registrar modelos, tipos de defeitos e quantidades associadas, proporcionando uma gestão abrangente do processo de inspeção.
