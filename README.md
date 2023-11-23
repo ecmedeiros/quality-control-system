@@ -46,9 +46,9 @@ Acesse os painéis de monitoramento:
 Abra o navegador e acesse as seguintes URLs para acompanhar a produção das células:
 
 
-Acesse para usar fazer registros de revisão: http://localhost:3000
+Acesse para fazer a revisão: http://localhost:3000
 
-Acesse para adicionar cabedais, modelos e revisoras: http://localhost:3000/registro
+Acesse para registrar cabedais, modelos e revisoras: http://localhost:3000/registro
 
 Se o arquivo JSON não tiver sido gerado ou estiver vazio, os painéis retornarão valores zerados.
 
