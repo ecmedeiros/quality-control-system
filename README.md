@@ -41,7 +41,7 @@ Substitua os valores acima pelos valores correspondentes do seu ambiente Postgre
 
 Inicie o servidor:
 
-    npm start
+    node server.js
 
 O servidor será iniciado e estará pronto para receber solicitações.
 
