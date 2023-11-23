@@ -57,3 +57,5 @@ Dependências
   - Dotenv
   - EJS
   - PostgreSQL (pg)
+  - path
+  - sequelize
