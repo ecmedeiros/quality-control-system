@@ -1,0 +1,106 @@
+body {
+    background-color: #0E1012;
+    color: #E8E8EA;
+    font-size: 7vh;
+}
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    /* width: 10rem; */
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    background-color: #16181D;
+    height: 80vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border-radius: 1vh;
+    justify-content: space-around;
+}
+
+#container button,input {
+    color: #fff;
+    border-radius: 1vh;
+    font-size: 5vh;
+    padding: 2vh;
+    margin: 2vh;
+}
+
+button,input {
+    background-color: #242731;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    border-bottom: 1px #9B9B9B solid; 
+}
+
+#selected-user {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px #9B9B9B solid;
+    margin: 0;
+}
+
+#selected-user{
+    border: none;
+}
+
+.models, .problems, .count-div, .teceloes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.models, .problems, .teceloes {
+    background-color: #1A1D23;
+    overflow: auto;
+}
+
+.models::-webkit-scrollbar,
+.problems::-webkit-scrollbar,
+.count-div::-webkit-scrollbar,
+.teceloes::-webkit-scrollbar {
+    width: 12px; /* Largura da scrollbar */
+}
+
+.models::-webkit-scrollbar-thumb,
+.problems::-webkit-scrollbar-thumb,
+.count-div::-webkit-scrollbar-thumb,
+.teceloes::-webkit-scrollbar-thumb {
+    background-color: #545556; /* Cor do polegar da scrollbar */
+    max-width: 6px; /* Largura máxima do polegar menor que a scrollbar */; /* Largura do polegar menor que a scrollbar */
+    border-radius: 1vh;
+}
+
+.models::-webkit-scrollbar-track,
+.problems::-webkit-scrollbar-track,
+.count-div::-webkit-scrollbar-track,
+.teceloes::-webkit-scrollbar-track {
+    background-color: #0E1012;
+    border-radius: 1vh;
+     /* Cor da trilha da scrollbar */
+}
+.checked {
+    background-color: #0E1012;
+    border: 2px #fff groove;
+    scale: 99%;
+}

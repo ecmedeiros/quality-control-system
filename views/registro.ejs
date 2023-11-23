@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insira os dados</title>
+    <link rel="shortcut icon" href="https://cdn.awsli.com.br/1841/1841417/favicon/c3fa5edbdd.png">
+    <link rel="icon" href="https://cdn.awsli.com.br/1841/1841417/favicon/c3fa5edbdd.png" sizes="192x192">
+    <script src="./register.js"></script>
+</head>
+
+<body>
+    <h2>Revisores</h2>
+    <button style="width:2rem; height: 2rem;" onclick="addInput('.revisor')">+</button>
+    <div class="revisor" style="display:flex; flex-direction: column;">
+    </div>
+    </div>
+    <br>
+
+    <h2>Motivos</h2>
+    <button style="width:2rem; height: 2rem;" onclick="addInput('.motivos')">+</button>
+    <div class="motivos" style="display:flex; flex-direction: column;">
+    </div>
+    </div>
+    <br>
+
+    <h2>Modelos</h2>
+    <button style="width:2rem; height: 2rem;" onclick="addInput('.modelos')">+</button>
+    <div class="modelos" style="display:flex; flex-direction: column;">
+    </div>
+    </div>
+    <br>
+
+    <input type="submit" value="Salvar" onclick="onSubmit()">
+</body>
+
+<style>
+    .rank_fat_day,
+    .rank_goal,
+    .rank_fat_month {
+        width: 15rem;
+    }
+</style>
+
+</html>

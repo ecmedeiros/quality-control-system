@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insira os dados</title>
+    <link rel="shortcut icon" href="https://cdn.awsli.com.br/1841/1841417/favicon/c3fa5edbdd.png">
+    <link rel="icon" href="https://cdn.awsli.com.br/1841/1841417/favicon/c3fa5edbdd.png" sizes="192x192">
+</head>
+
+<body>
+    <h2>Painél 1 (Ursômetro)</h2>
+    <form action="/api/objeto" method="POST"></form>
+    <label for="ursometro">Ursômetro:</label>
+    <input type="number" id="ursometro" name="ursometro"><br><br>
+    <label for="voltinhas">Voltinhas:</label>
+    <input type="number" id="voltinhas" name="voltinhas"><br><br>
+    <label for="abracos">Abraços:</label>
+    <input type="number" id="abracos" name="abracos"><br><br>
+    <label for="pedidos">Pedidos:</label>
+    <input type="number" id="pedidos" name="pedidos"><br><br>
+    <label for="pulinhos">Pulinhos:</label>
+    <input type="number" id="pulinhos" name="pulinhos"><br><br>
+
+    <h2>Painél 2 (Franquias)</h2>
+    <h3>Faturamento - Franquias:</h3>
+    <div class="faturamento_franq">
+        <label for="fat_realizado">Realizado:</label>
+        <input type="number" id="fat_realizado" name="fat_realizado"><br><br>
+        <label for="fat_meta">Meta:</label>
+        <input type="number" id="fat_meta" name="fat_meta"><br>
+    </div>
+
+
+    <h3>Faturamento - CD:</h3>
+    <div class="faturamento_cd">
+        <label for="fat_cd_realizado">Realizado:</label>
+        <input type="number" id="fat_cd_realizado" name="fat_cd_realizado"><br><br>
+        <label for="rank_goal">Meta:</label>
+        <input type="number" id="rank_goal" name="rank_goal"><br><br>
+    </div>
+
+    <label for="oficinas">Oficinas e Quioesques:</label>
+    <input type="number" id="oficinas" name="oficinas"><br><br>
+    <!-- <label for="implantacao">Franquias em implantação:</label> -->
+    <!-- <input type="text" id="implantacao" name="implantacao"> -->
+
+    <h2>Em implantação</h2>
+    <button style="width:2rem; height: 2rem;" onclick="addInput()">+</button>
+    <div class="lista-implantacao" style="display:flex; flex-direction: column;">
+    </div>
+    </div>
+
+    <br>
+
+    <h2>Painél 3 (ranking)</h2>
+    <div style="display:flex; flex-direction: column;" class="ranking">
+        <label for="rank_fat_day">Ranking do Faturamento Diário:</label>
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+        <input type="text" class="rank_fat_day" name="rank_fat_day">
+
+        <br>
+
+        <label for="rank_goal">Ranking do % Meta Batida:</label>
+        <input type="text" class="rank_goal" name="rank_goal">
+        <input type="text" class="rank_goal" name="rank_goal">
+        <input type="text" class="rank_goal" name="rank_goal">
+        <input type="text" class="rank_goal" name="rank_goal">
+        <input type="text" class="rank_goal" name="rank_goal">
+        <input type="text" class="rank_goal" name="rank_goal">
+        <input type="text" class="rank_goal" name="rank_goal">
+        <input type="text" class="rank_goal" name="rank_goal">
+        <input type="text" class="rank_goal" name="rank_goal">
+        <input type="text" class="rank_goal" name="rank_goal">
+
+        <br>
+
+        <label for="rank_fat_month">Ranking do Faturamento Mensal:</label>
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+        <input type="text" class="rank_fat_month" name="rank_fat_month">
+    </div>
+    <br><br>
+
+    <div class="box-left">
+        <label for="nps">NPS trimestral</label>
+        <input type="number" id="nps" name="nps"><br><br>
+        <label for="vendas_franq">RVendas Franquias</label>
+        <input type="number" id="vendas_franq" name="vendas_franq"><br><br>
+        <label for="TM">TM:</label>
+        <input type="number" id="TM" name="TM"><br><br>
+        <label for="PA">PA</label>
+        <input type="number" id="PA" name="PA"><br><br>
+    </div>
+
+    <div class="box-right">
+        <label for="horas-treinamento">Horas - Treinamento </label>
+        <input type="number" id="horas-treinamento" name="horas-treinamento"><br><br>
+        <label for="colab">Colaboradores</label>
+        <input type="number" id="colab" name="colab"><br><br>
+
+    </div>
+
+    <br>
+    <input type="submit" value="Enviar" onclick="onSubmit()">
+</body>
+
+<style>
+    .rank_fat_day,
+    .rank_goal,
+    .rank_fat_month {
+        width: 15rem;
+    }
+</style>
+
+<script>
+    const ursometro = document.querySelector('#ursometro')
+    const voltinhas = document.querySelector('#voltinhas')
+    const abracos = document.querySelector('#abracos')
+    const pedidos = document.querySelector('#pedidos')
+    const pulinhos = document.querySelector('#pulinhos')
+
+    const faturamento_franq = document.querySelectorAll('.faturamento_franq input')
+    const faturamento_cd = document.querySelectorAll('.faturamento_cd input')
+    const oficinas = document.querySelector('#oficinas')
+    const lista_implantacao = document.querySelector('.lista-implantacao')
+
+
+    const rankingDiv = document.querySelectorAll('.ranking input');
+
+    const boxLeftDiv = document.querySelectorAll('.box-left input');
+
+    const boxRightDiv = document.querySelectorAll('.box-right input');
+
+    const substituirStringVaziaPorZero = (valor) => {
+        return valor === '' ? "0" : valor;
+    };
+
+
+    function getElement(arrElement, data) {
+        arrElement.forEach((element, index) => {
+            element.value = data[index]
+        });
+    }
+
+    async function fetchData() {
+        const response = await fetch('/api/objeto');
+        const data = await response.json();
+
+        ursometro.value = data.ursometro
+        voltinhas.value = data.voltinhas
+        abracos.value = data.abracos
+        pedidos.value = data.pedidos
+        pulinhos.value = data.pulinhos
+
+        getElement(faturamento_franq, data.faturamento_franq)
+        // faturamento_franq[0].value = data.faturamento_franq[0]
+        // faturamento_franq[1].value = data.faturamento_franq[1]
+
+        getElement(faturamento_cd, data.faturamento_cd)
+
+        getElement(rankingDiv, data.ranking)
+
+        getElement(boxLeftDiv, data.boxLeft)
+
+        getElement(boxRightDiv, data.boxLeft)
+
+        oficinas.value = data.oficinas
+        // implantacao.value = data.implatacao
+
+        for (let i = 0; i < data.lista_implantacao.length; i++) {
+            try {
+                lista_implantacao.children[i].children[1].value = data.lista_implantacao[i]
+            } catch (error) {
+                addInput(data.lista_implantacao[i])
+            }
+        }
+    }
+    fetchData()
+
+    function addCloseButton(parentElement) {
+        const closeButton = document.createElement('button')
+        closeButton.innerText = 'X'
+        closeButton.addEventListener('click', () => { parentElement.parentElement.removeChild(parentElement) })
+        parentElement.appendChild(closeButton)
+    }
+
+    function addInput(valor) {
+        const form = document.createElement('div')
+        const new_label = document.createElement('label')
+        new_label.innerText = 'Franquias em implantação:'
+        const new_input = document.createElement('input')
+        new_input.type = 'text'
+        new_input.style = 'width:15rem'
+        new_input.value = valor || ''
+        form.classList = 'form'
+        lista_implantacao.appendChild(form)
+        form.appendChild(new_label)
+        form.appendChild(new_input)
+        addCloseButton(form)
+    }
+
+    function recordElement(div, arr) {
+        console.log(typeof arr)
+        div.forEach(value => {
+            arr.push(substituirStringVaziaPorZero(value.value))
+        })
+    }
+
+    function onSubmit() {
+        const valores = {}
+        valores.ursometro = (ursometro.value != '' ? ursometro.value : 0)
+        valores.voltinhas = (voltinhas.value != '' ? voltinhas.value : 0)
+        valores.abracos = (abracos.value != '' ? abracos.value : 0)
+        valores.pedidos = (pedidos.value != '' ? pedidos.value : 0)
+        valores.pulinhos = (pulinhos.value != '' ? pulinhos.value : 0)
+
+        valores.faturamento_franq = [faturamento_franq[0].value != '' ? faturamento_franq[0].value : 0, faturamento_franq[1].value != '' ? faturamento_franq[1].value : 0]
+
+        valores.faturamento_cd = [faturamento_cd[0].value != '' ? faturamento_cd[0].value : 0, faturamento_cd[1].value != '' ? faturamento_cd[1].value : 0]
+
+        valores.oficinas = (oficinas.value != '' ? oficinas.value : 0)
+        // valores.implatacao = (implantacao.value != '' ? implantacao.value : 0)
+
+        let lista_implantacao_array = []
+        for (let i = 0; i < lista_implantacao.children.length; i++) {
+            const valueInput = lista_implantacao.children[i].children[1].value
+            lista_implantacao_array.push(valueInput)
+        }
+        valores.lista_implantacao = lista_implantacao_array
+        // console.log()
+        const substituirStringVaziaPorZero = (valor) => {
+            return valor === '' ? "0" : valor;
+        };
+
+        valores.ranking = [];
+        valores.boxLeft = [];
+        valores.boxRight = [];
+
+        // Atribui os valores e substitui as strings vazias por zero
+        recordElement(rankingDiv, valores.ranking)
+        recordElement(boxLeftDiv, valores.boxLeft)
+        recordElement(boxRightDiv, valores.boxRight)
+
+
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json' // Indica que os dados estão em formato JSON
+            },
+            body: JSON.stringify(valores) // Converte os dados para JSON e os coloca no corpo da requisição
+        };
+
+        fetch('/post/input', requestOptions)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro na requisição')
+                }
+                return response.json(0)
+            })
+            .then(data => {
+                // console.log('Resposta da API:', data)
+            })
+            .catch(err => {
+                console.error('Erro:', err)
+            })
+    }
+</script>
+
+</html>
