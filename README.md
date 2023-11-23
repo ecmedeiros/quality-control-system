@@ -4,7 +4,7 @@ O quality-control-system é uma solução para aprimorar o controle de qualidade
 
 ![Tela princial da revisao](public/images/revisao.gif)
 
-![Tela de Registros](public/images/registros.gif)
+![Tela de Registros](public/images/insert.gif)
 
 ## Instalação
 
